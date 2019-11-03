@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estilosActividades.css">
+    <title>Actividad seis</title>
+</head>
+<body>
+    <fieldset id="marco">
+    <H1>¿Qué tanto has aprendido de lo nuevo de CSS3?</H1>
+    </fieldset>
+   
+    <form>
+        <fieldset>
+            <legend>selecciona la respuesta correcta.</legend>
+
+                <label for="cmbPregunta1">
+                   1.  Que hay de nuevo sobre el tema del manejo de imágenes.
+                </label>
+                <select name="" id="cmbPregunta1">
+                    <option value=0>-</option>
+                    <option value=0>Permite colocar marca de agua a las imágenes.</option>
+                    <option value=0>Cambia la textura del color de las imágenes.</option>
+                    <option value=1>Permite poner varias imágenes de fondo en un mismo elemento.</option>
+                    <option value=0>Ninguna de las anteriores.</option>
+                </select>
+
+                <label for="cmbPregunta2">
+                    2.  Sobre el diseño de las esquinas que hay de nuevo.
+                    </label>
+                    <select name="" id="cmbPregunta2">
+                        <option value=0>-</option>
+                        <option value=0>incorpora una nueva propiedad que permite diseñar las esquinas de las áreas de la página.</option>
+                        <option value=1>Incorpora una nueva propiedad que permite redondear las esquinas de las áreas de la página.</option>
+                        <option value=0>incorpora una nueva propiedad que permite eliminar las esquinas de las áreas de la página.</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+
+                <label for="cmbPregunta3">
+                    3.  Que novedades hay sobre el tema del color
+                    </label>
+                    <select name="" id="cmbPregunta3">
+                        <option value=0>-</option>
+                        <option value=1>Cada color y cada elemento puede adquirir un grado de transparencia que va desde el color sólido al transparente total.</option>
+                        <option value=0>Se puede cambiar el color del texto.</option>
+                        <option value=0>Se puede personalizar los colores de la pagina.</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+
+                <label for="cmbPregunta4">
+                    4.  Cuál es la gran novedad de CSS3
+                    </label>
+                    <select name="" id="cmbPregunta4">
+                        <option value=0>-</option>
+                        <option value=0>Permite animaciones flash</option>
+                        <option value=1>Permite crear animaciones enteramente desde CSS3.</option>
+                        <option value=0>Solo permite animaciones creadas en javascript </option>
+                        <option value=0>Todas las anteriores.</option>
+                    </select>
+
+                <label for="cmbPregunta5">
+                    5.  Ventajas de CSS3
+                    </label>
+                    <select name="" id="cmbPregunta5">
+                        <option value=0>-</option>
+                        <option value=0>No elimina nada de lo que ya existía en CSS2.</option>
+                        <option value=0>Crea nuevas posibilidades para poder dar un aspecto más dinámico a la página.</option>
+                        <option value=0>La sintaxis del lenguaje en sí no cambia.</option>
+                        <option value=1>Todas de las anteriores</option>
+                    </select>
+                        
+                    
+                    <input id="boton" type="button" value="Haz clic aquí para Calificar" onclick="calificarActividad()">
+        </fieldset>
+        <script>
+            function calificarActividad(){
+            var $puntaje=0;
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta1").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta2").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta3").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta4").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta5").value);
+
+            alert("Sacaste " + $puntaje + " de 5");
+            }
+            
+        </script>
+
+    </form>
+</body>
+</html>

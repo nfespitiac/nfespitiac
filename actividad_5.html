@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estilosActividades.css">
+    <title>Actividad cinco</title>
+</head>
+<body>
+    <fieldset id="marco">
+    <H1>¿Qué tanto has aprendido sobre como crear Repositorio en GitHub?</H1>
+    </fieldset>
+
+    <form>
+        <fieldset>
+            <legend>selecciona la respuesta correcta.</legend>
+
+                <label for="cmbPregunta1">
+                   1.  ¿Qué se debe tener en cuenta inicialmente para crear un repositorio en GitHub?
+                </label>
+                <select name="" id="cmbPregunta1">
+                    <option value=0>-</option>
+                    <option value=0>Descargar GitHub Desktop.</option>
+                    <option value=0>Nombrar el repositorio.</option>
+                    <option value=0>Guardar y sincronizar el repositorio.</option>
+                    <option value=1>Registrarse y crear una cuenta en el portal de Github</option>
+                </select>
+
+                <label for="cmbPregunta2">
+                    2.  ¿Qué pasa si creo el repositorio como privado?
+                    </label>
+                    <select name="" id="cmbPregunta2">
+                        <option value=0>-</option>
+                        <option value=0>Solo mi grupo de amigos puede ver el repositorio.</option>
+                        <option value=1>Me va a solicitar que la cuenta sea de pago.</option>
+                        <option value=0>Tengo que anexar por defecto los colboradores que se han privados.</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+
+                <label for="cmbPregunta3">
+                    3.  ¿Como se cargan los archivos del proyecto al repositorio?
+                    </label>
+                    <select name="" id="cmbPregunta3">
+                        <option value=0>-</option>
+                        <option value=0>Se comprimen y se copian al repositorio</option>
+                        <option value=0>Se crean directamente los archivos desde el repositorio.</option>
+                        <option value=1>Se realiza un push sea con GitHub Desktop o Git Bash.</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+
+                <label for="cmbPregunta4">
+                    4.  ¿Qué comando se utiliza en Git Bash para hacer push?
+                    </label>
+                    <select name="" id="cmbPregunta4">
+                        <option value=0>-</option>
+                        <option value=0>gitbash push -u origin master</option>
+                        <option value=1>git push -u origin master.</option>
+                        <option value=0>git push -u -l origin master</option>
+                        <option value=0>Ninguna de las anteriores</option>
+                    </select>
+
+                <label for="cmbPregunta5">
+                    5.  ¿Comando para clonar le repositorio con Git Bash?
+                    </label>
+                    <select name="" id="cmbPregunta5">
+                        <option value=0>-</option>
+                        <option value=1>$ git clone https://github.com/User/NombreRepo.git.</option>
+                        <option value=0>$ git Bash clone https://github.com/User/NombreRepo.git</option>
+                        <option value=0>$ git clone -m https://github.com/User/NombreRepo.git</option>
+                        <option value=0>Todas de las anteriores</option>
+                    </select>
+                        
+                    
+                    <input id="boton" type="button" value="Haz clic aquí para Calificar" onclick="calificarActividad()">
+        </fieldset>
+        <script>
+            function calificarActividad(){
+            var $puntaje=0;
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta1").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta2").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta3").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta4").value);
+            $puntaje=$puntaje + parseInt(document.getElementById("cmbPregunta5").value);
+
+            alert("Sacaste " + $puntaje + " de 5");
+            }
+            
+        </script>
+
+    </form>
+</body>
+</html>

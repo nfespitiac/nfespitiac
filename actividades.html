@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividades</title>
+</head>
+<body>
+    <header>
+        <img src="img/UNAD.png" alt="logo UNAD" class="logoUnad">
+        <h1>Diseño de sitios WEB <span>#Actividades</span></h1>
+        <section>
+        <label for="">
+            <img id="menu" src="img/MENU.png" alt="" class="imagenMenu">
+        </label>
+        <div id="fondoMenu">        
+            <nav >
+                <span id="btnCerrar" ><img src="img/close.svg" class="btnCerrar"></span>
+                <a href="index.html">Inicio</a>
+                            <a href="lecturas.html">Lecturas</a>
+                            <span>Multimedia</span>                              
+                                    <a href="m_gitHub.html" class="submenu">-GitHub</a>
+                                    <a href="m_HTML.html" class="submenu">-HTML</a>
+                                    <a href="m_CSS.html" class="submenu">-CSS</a>                             
+                            <a href="actividades.html">Actividades</a>
+                            <a href="autores.html">Autores</a>
+            </nav>
+        </div>
+        </section>
+    </header>
+    <div id="ventanaEmergente">
+            <span id="btnCerrarEmergente" ><img src="img/close.svg" class="btnCerrar"></span>
+            <iframe id="frameLectura" src="" frameborder="0"></iframe>
+        </div>
+        <section id="portada">
+            <section>
+                    <h2>Actividad 1</h2>
+                    <img src="img/HTML.png" alt="lectura CSS" class="imgLectura">
+                    <p>
+                        Arriésgate y evalúa el conocimiento básico que has adquirido en html.
+                    </p>
+                    <input type="button" value="Te reto, Evalúate!!!" data-lectura="actividad_1.html" onclick="lectura(this)">
+            </section>
+            <section>
+                    <h2>Actividad 2</h2>
+                    <img src="img/CSS3_juego.png" alt="lectura CSS" class="imgLectura">
+                    <p>
+                        En esta actividad mide tus conocimientos y habilidades y disfruta por medio de un juego de selección que tanto has aprendido sobre CCS y CSS3.
+                    </p>
+                    <input type="button" value="Te reto, Evalúate!!!" data-lectura="https://es.educaplay.com/es/recursoseducativos/4923067/html5/conoce_css3.htm" onclick="lectura(this)">
+            </section>
+            <section>
+                    <h2>Actividad  3</h2>
+                    <img src="img/HTmL_juego.png" alt="lectura CSS" class="imgLectura">
+                    <p>
+                        En esta actividad encontrar un crucigrama que les permitirá probar sus conocimientos adquiridos en el desarrollo en HTML.
+                    </p>
+                    <input type="button" value="Te reto, Evalúate!!!" data-lectura="https://es.educaplay.com/es/recursoseducativos/4923328/html5/conoce_html.htm" onclick="lectura(this)">
+            </section>
+            <section>
+                <h2>Actividad 4</h2>
+                <img src="img/GitHub1.jpg" alt="lectura CSS" class="imgLectura">
+                <p>
+                    Atrévete a probar tus conocimientos obtenidos sobre GitHub con esta actividad de cuestionario. 
+                </p>
+                <input type="button" value="Te reto, Evalúate!!!" data-lectura="actividad_4.html" onclick="lectura(this)">
+            </section>
+            <section>
+                <h2>Actividad 5</h2>
+                <img src="img/GitHub2.jpg" alt="lectura CSS" class="imgLectura">
+                <p>
+                    Prueba e intenta resolver el cuestionario sobre repositorios GiHub y evalúa cuanto has aprendido.
+                </p>
+                <input type="button" value="Te reto, Evalúate!!!" data-lectura="actividad_5.html" onclick="lectura(this)">
+            </section>
+            <section>
+                <h2>Actividad 6</h2>
+                <img src="img/CSS3.png" alt="lectura CSS" class="imgLectura">
+                <p>
+                    Por medio de la siguiente actividad puedes probar que tanto aprendiste sobre la nuevo de CC3
+                </p>
+                <input type="button" value="Te reto, Evalúate!!!" data-lectura="actividad_6.html" onclick="lectura(this)">
+            </section>
+
+    </section>
+    <aside data-lectura="twitter.html" onclick="lectura(this)">
+        <img src="img/twitter-rise.gif" title="Mira lo que pasa en twitter">
+    </aside> 
+
+    
+    <script src="js/javaScript.js">   
+    </script> 
+</body>
+</html>
